@@ -2,8 +2,7 @@
   "name": "mogo-project",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel index.html --open",
-    "build": "parsel build index.html"
+    "start": "parcel index.html --open"
   },
   "author": "Kristina Safaralieva",
   "license": "ISC",
