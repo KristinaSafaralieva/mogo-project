@@ -1,0 +1,93 @@
+.blog {
+
+    &__wrapper {
+        width: 100%;
+        padding: 84px 0;
+    }
+
+    &__cards {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__card {
+        max-width: 370px;
+        width: 100%;
+
+        &-images {
+            position: relative;
+
+            &_date {
+                max-width: 80px;
+                max-height: 80px;
+                width: 100%;
+                background-color: @morning-backround-color;
+                position: absolute;
+                bottom: 25px;
+                left: -14px;
+
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 36px;
+                    line-height: 30px;
+                    text-align: center;
+                    text-transform: uppercase;
+                    color: @white-color-text;
+                }
+
+                h4 {
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: @white-color-text;
+                }
+            }
+        }
+
+        &-description {
+            margin-top: 30px;
+            color: @shark-color-text;
+
+            &__title {
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    padding: 6px 0;
+                }
+            }
+
+            &-text {
+                h4 {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    margin-bottom: 22px;
+                }
+            }
+
+            &-icons {
+                display: flex;
+            }
+
+            &-icon {
+                display: flex;
+                align-items: center;
+            
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 15px;
+                    padding: 0 16px 0 18px;
+                }
+            }
+        }
+    }
+}

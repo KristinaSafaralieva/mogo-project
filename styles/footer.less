@@ -1,0 +1,217 @@
+.footer {
+    &__wrapper {
+        width: 100%;
+        padding-top: 42px;
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 42px;
+
+        &-info {
+            max-width: 370px;
+        }
+
+        &-links {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid @silver-color;
+            margin-bottom: 37px;
+
+            p {
+                font-style: italic;
+                font-weight: 400;
+                font-size: 13px;
+                line-height: 15px;
+                color: @silver-color;
+                padding: 14px 0;
+            }
+        }
+
+        &-input {
+            display: flex;
+            max-width: 370px;
+            width: 100%;
+        }
+
+        &-blog {
+            max-width: 470px;
+            width: 100%;
+
+            &__title {
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: @shark-color-text;
+                    padding: 36px 0;
+                }
+            }
+
+            &__card {
+                display: flex;
+
+                &:nth-child(2) {
+                    margin: 20px 0;
+                }
+            }
+        }
+
+        &-instagram {
+            max-width: 300px;
+
+            &__title {
+                h3 {
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 24px;
+                    line-height: 28px;
+                    text-transform: uppercase;
+                    color: @shark-color-text;
+                    padding: 36px 0;
+                }
+            }
+
+            &__photos {
+                display: grid;
+                grid-template-columns: repeat(3, auto);
+                grid-template-rows: repeat(3, auto);
+            }
+
+            &_link {
+                padding: 38px 0;
+
+                a {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 13px;
+                    line-height: 15px;
+                    text-decoration-line: underline;
+                    text-transform: uppercase;
+                    color: @shark-color-text;
+                }
+            }
+        }
+    }
+
+    &__copyright {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        text-transform: uppercase;
+        padding: 17px 0;
+        border-top: 1px solid @silver-color;
+    }
+}
+
+.info-description {
+    p {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        display: flex;
+        align-items: center;
+        color: @silver-color;
+        padding: 16px 0;
+        width: 100%;
+    }
+}
+
+.info-followers {
+    color: @shark-color-text;
+
+    p {
+        padding: 30px 0 20px;
+        font-style: italic;
+        font-weight: 400;
+        font-size: 18px;
+        text-transform: uppercase;
+
+        span {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 30px;
+            text-transform: uppercase;
+        }
+    }
+}
+
+
+.links__wrapper {
+    display: flex;
+    padding: 10px 0;
+
+    img {
+        width: 24px;
+        height: 24px;
+
+        &:nth-child(odd) {
+            margin: 0 10px;
+        }
+    }
+}
+
+.input {
+    width: 100%;
+    height: 55px;
+    border: 1px solid @silver-color;
+
+    &::placeholder {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 21px;
+        text-align: center;
+        color: @silver-color;
+    }
+}
+
+.button {
+    width: 134px;
+    height: 55px;
+    background-color: @morning-backround-color;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 21px;
+    text-transform: uppercase;
+    color: @white-color-text;
+    border: none;
+}
+
+.blog__card {
+    &-image {
+        max-width: 170px;
+        width: 100%;
+        margin-right: 30px;
+
+        img {
+            width: 100%;
+        }
+    }
+
+    &-descriptions {
+        h4{
+            font-style: normal;
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 21px;
+            text-transform: uppercase;
+        }
+
+        h5 {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 13px;
+            line-height: 15px;
+            padding: 10px 0;
+        }
+    }
+}
