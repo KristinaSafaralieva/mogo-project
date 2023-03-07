@@ -158,10 +158,16 @@
     transition: all 0.8s ease-in-out;
     z-index: 1;
 
+
+
     &_gradient {
         width: 100%;
         height: 100%;
         background: @background-gradient;
+
+        .header__wrapper {
+            display: none;
+        }
     }
 
     @media screen and (max-width: 760px) {
@@ -171,6 +177,10 @@
     &.sidebar_menu_active {
         @media screen and (max-width: 760px) {
             transform: translateX(0);
+
+            .header__wrapper {
+                display: flex;
+            }
         }
     }
 }
