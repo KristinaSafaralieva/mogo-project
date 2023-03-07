@@ -17,17 +17,51 @@
                 </div>
                 <div class="header__nav">
                     <ul class="header__list">
-                        <li><a href="#">About</a></li>
-                        <li><a href="#">Service</a></li>
-                        <li><a href="#">Work</a></li>
-                        <li><a href="#">Blog</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#service">Service</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#blog">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
                         <li><div class="masked masked-cart"></div></li>
                         <li><div class="masked masked-input"></div><input type="search"></li>
                     </ul>
                 </div>
+                <div class="burger_button">
+                    <button class="sidebar_btn sidebar_btn-open" type="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>    
             </div>
         </div>
+        <aside class="sidebar_menu">
+            <div class="sidebar_menu_gradient">
+                <div class="header__wrapper">
+                    <div class="header__logo">
+                        <img src="./icon/logo.png" alt="logo">
+                    </div>
+                    <div class="burger_button">
+                        <button class="sidebar_btn sidebar_btn-close" type="button">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </button>
+                    </div>    
+                </div>
+                <nav class="header_sidebar_menu">
+                    <div class="sidebar_nav-item">
+                        <ul>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#service">Service</a></li>
+                            <li><a href="#work">Work</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </aside>
     </header>
     <section class="banner">
         <div class="banner_gradient">
@@ -69,7 +103,7 @@
             </div>
         </div>
     </section>
-    <section class="about">
+    <section class="about" id="about">
         <div class="container">
             <div class="about__wrapper">
                 <div class="text">
@@ -133,7 +167,7 @@
             </div>
         </div>
     </section>
-    <section class="service">
+    <section class="service" id="service">
         <div class="container">
             <div class="service__wrapper">
                 <div class="text">
@@ -281,7 +315,7 @@
                                 <div class="accordion__header-title">
                                     <h3>photography</h3>
                                 </div>
-                                <div class="accordion__header-arrow">
+                                <div class="accordion__header-arrow" onclick="onAccordionBtnClick(this)">
                                     <img src="./icon/arrow_down.png" alt="arrow">
                                 </div>
                             </div>
@@ -297,7 +331,7 @@
                                 <div class="accordion__header-title">
                                     <h3>creativity</h3>
                                 </div>
-                                <div class="accordion__header-arrow">
+                                <div class="accordion__header-arrow" onclick="onAccordionBtnClick(this)">
                                     <img src="./icon/arrow_down.png" alt="arrow">
                                 </div>
                             </div>
@@ -313,7 +347,7 @@
                                 <div class="accordion__header-title">
                                     <h3>web design</h3>
                                 </div>
-                                <div class="accordion__header-arrow">
+                                <div class="accordion__header-arrow" onclick="onAccordionBtnClick(this)">
                                     <img src="./icon/arrow_down.png" alt="arrow">
                                 </div>
                             </div>
@@ -331,7 +365,7 @@
             <div class="reviews__wrapper">
                 <div class="reviews__users reviews__users-active">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -352,14 +386,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -380,14 +414,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -408,14 +442,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -436,14 +470,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -464,10 +498,42 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
+                </div>
+                <div class="reviews__dots">
+                    <button
+                        class="reviews__dots_button reviews__dots_button-active"
+                        data-reviewIndex="0"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="1"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="2"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="3"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="4"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
                 </div>
             </div>
         </div>
@@ -492,40 +558,40 @@
                         <div class="team__member-hover">
                             <img src="./image/team1.png" alt="member">
                             <div class="team__member-hover-socials">
-                                <a href="#"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
-                                <a href="#"><img src="./image/ci_twitter.png" alt="twitter"></a>
-                                <a href="#"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
-                                <a href="#"><img src="./image/ci_instagram.png" alt="instagram"></a>
+                                <a href="https://www.facebook.com/"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
+                                <a href="https://twitter.com/?lang=ru"><img src="./image/ci_twitter.png" alt="twitter"></a>
+                                <a href="https://www.pinterest.com/"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
+                                <a href="https://www.instagram.com/"><img src="./image/ci_instagram.png" alt="instagram"></a>
                             </div>
-                            <h3>Kadin Dias</h3>
-                            <h4>founder, ceo</h4>
                         </div>
+                        <h3>Kadin Dias</h3>
+                        <h4>founder, ceo</h4>
                     </div>
                     <div class="team__member">
                         <div class="team__member-hover">
                             <img src="./image/team2.png" alt="member">
                             <div class="team__member-hover-socials">
-                                <a href="#"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
-                                <a href="#"><img src="./image/ci_twitter.png" alt="twitter"></a>
-                                <a href="#"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
-                                <a href="#"><img src="./image/ci_instagram.png" alt="instagram"></a>
+                                <a href="https://www.facebook.com/"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
+                                <a href="https://twitter.com/?lang=ru"><img src="./image/ci_twitter.png" alt="twitter"></a>
+                                <a href="https://www.pinterest.com/"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
+                                <a href="https://www.instagram.com/"><img src="./image/ci_instagram.png" alt="instagram"></a>
                             </div>
-                            <h3>Zain Calzoni</h3>
-                            <h4>designer</h4>
                         </div>
+                        <h3>Zain Calzoni</h3>
+                        <h4>designer</h4>
                     </div>
                     <div class="team__member">
                         <div class="team__member-hover">
                             <img src="./image/team3.png" alt="member">
                             <div class="team__member-hover-socials">
-                                <a href="#"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
-                                <a href="#"><img src="./image/ci_twitter.png" alt="twitter"></a>
-                                <a href="#"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
-                                <a href="#"><img src="./image/ci_instagram.png" alt="instagram"></a>
+                                <a href="https://www.facebook.com/"><img src="./image/bx_bxl-facebook.png" alt="facebook"></a>
+                                <a href="https://twitter.com/?lang=ru"><img src="./image/ci_twitter.png" alt="twitter"></a>
+                                <a href="https://www.pinterest.com/"><img src="./image/jam_pinterest.png" alt="pinterest"></a>
+                                <a href="https://www.instagram.com/"><img src="./image/ci_instagram.png" alt="instagram"></a>
                             </div>
-                            <h3>Charlie George</h3>
-                            <h4>photographer</h4>
                         </div>
+                        <h3>Charlie George</h3>
+                        <h4>photographer</h4>
                     </div>
                 </div>
             </div>
@@ -534,7 +600,7 @@
     <section class="partners">
         <div class="container">
             <div class="partners__wrapper">
-                <div class="partners_item">
+                <div class="partners__item">
                     <a href="#"><img src="./icon/black_ico1.png" alt="partner"></a>
                 </div>
                 <div class="partners__item">
@@ -555,8 +621,8 @@
             </div>
         </div>
     </section>
-    <section class="work">
-        <div class="container">
+    <section class="work" id="work">
+        <div class="container container_work">
             <div class="work__wrapper">
                 <div class="text">
                     <div class="text-pretitle">
@@ -571,20 +637,54 @@
                     </div>
                 </div>
                 <div class="work__images">
-                    <div class="work__images-cantain">
-                        <img src="./image/work_img1.png" alt="image">
-                        <img src="./image/work_img2.png" alt="image">
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
                     </div>
-                    <div class="work__images-cantain">
-                        <img src="./image/work_img3.png" alt="image">
-                        <img src="./image/work_img4.png" alt="image">
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
                     </div>
-                    <div class="work__images-cantain">
-                        <img src="./image/work_img5.png" alt="image">
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
                     </div>
-                    <div class="work__images-cantain">
-                        <img src="./image/work_img6.png" alt="image">
-                        <img src="./image/work_img7.png" alt="image">
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
+                    </div>
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
+                    </div>
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
+                    </div>
+                    <div class="work__image">
+                        <div class="work__image-hover">
+                            <img src="./icon/cup.png" alt="cup">
+                            <h4>creatively design</h4>
+                            <h5>Lorem ipsum dolor sit</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -595,7 +695,7 @@
             <div class="reviews__wrapper">
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -616,14 +716,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users  reviews__users-active">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -644,14 +744,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -672,14 +772,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -700,14 +800,14 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
                 </div>
                 <div class="reviews__users">
                     <div class="slider-button slider-button-left">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this, true)">
                             <img src="./icon/arrow_down.png" alt="arrow_left">
                         </button>
                     </div>
@@ -728,10 +828,42 @@
                         </div>
                     </div>
                     <div class="slider-button slider-button-right">
-                        <button type="button">
+                        <button type="button" onclick="onSliderControlClick(this)">
                             <img src="./icon/arrow_down.png" alt="arrow_right">
                         </button>
                     </div>
+                </div>
+                <div class="reviews__dots">
+                    <button
+                        class="reviews__dots_button reviews__dots_button-active"
+                        data-reviewIndex="0"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="1"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="2"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="3"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
+                    <button
+                        class="reviews__dots_button"
+                        data-reviewIndex="4"
+                        type="button"
+                        onclick="onSliderDotClick(this)">
+                    </button>
                 </div>
             </div>
         </div>
@@ -831,7 +963,7 @@
              </div>
         </div>
     </section>
-    <section class="blog">
+    <section class="blog" id="blog">
         <div class="container">
             <div class="blog__wrapper">
                 <div class="text">
@@ -854,18 +986,18 @@
                         </div>
                         <div class="blog__card-description">
                             <div class="blog__card-description__title">
-                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <a href="#"><h3>Lorem ipsum dolor sit amet</h3></a>
                             </div>
                             <div class="blog__card-description-text">
                                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</h4>
                             </div>
                             <div class="blog__card-description-icons">
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog1.png" alt="icon">
+                                    <div class="mask mask-watch"></div>
                                     <p>542</p>
                                 </div>
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog2.png" alt="icon">
+                                    <div class="mask mask-comment"></div>
                                     <p>17</p>
                                 </div>
                             </div>
@@ -881,18 +1013,18 @@
                         </div>
                         <div class="blog__card-description">
                             <div class="blog__card-description__title">
-                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <a href="#"><h3>Lorem ipsum dolor sit amet</h3></a>
                             </div>
                             <div class="blog__card-description-text">
                                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</h4>
                             </div>
                             <div class="blog__card-description-icons">
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog1.png" alt="icon">
+                                    <div class="mask mask-watch"></div>
                                     <p>542</p>
                                 </div>
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog2.png" alt="icon">
+                                    <div class="mask mask-comment"></div>
                                     <p>17</p>
                                 </div>
                             </div>
@@ -908,18 +1040,18 @@
                         </div>
                         <div class="blog__card-description">
                             <div class="blog__card-description__title">
-                                <h3>Lorem ipsum dolor sit amet</h3>
+                                <a href="#"><h3>Lorem ipsum dolor sit amet</h3></a>
                             </div>
                             <div class="blog__card-description-text">
                                 <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque quis proin varius vitae leo eget tincidunt duis amet. Et amet dis vel imperdiet volutpat mauris est leo cursus.</h4>
                             </div>
                             <div class="blog__card-description-icons">
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog1.png" alt="icon">
+                                    <div class="mask mask-watch"></div>
                                     <p>542</p>
                                 </div>
                                 <div class="blog__card-description-icon">
-                                    <img src="./icon/blog2.png" alt="icon">
+                                    <div class="mask mask-comment"></div>
                                     <p>17</p>
                                 </div>
                             </div>
@@ -944,7 +1076,7 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer__wrapper">
                 <div class="footer__socials">
@@ -963,14 +1095,30 @@
                         <div class="footer__socials-links">
                             <p>Follow Us</p>
                             <div class="links__wrapper">
-                                <img src="./icon/facebook.png" alt="icon">
-                                <img src="./icon/twitter.png" alt="icon">
-                                <img src="./icon/instagram.png" alt="icon">
-                                <img src="./icon/pinterest.png" alt="icon">
-                                <img src="./icon/linkedin.png" alt="icon">
-                                <img src="./icon/youtube.png" alt="icon">
-                                <img src="./icon/topcoat_dribble.png" alt="icon">
-                                <img src="./icon/tiktok.png" alt="icon">
+                                <a href="https://www.facebook.com/">
+                                    <img src="./icon/facebook.png" alt="icon">
+                                </a>
+                                <a href="https://twitter.com/?lang=ru">
+                                    <img src="./icon/twitter.png" alt="icon">
+                                </a>
+                                <a href="https://www.instagram.com/">
+                                    <img src="./icon/instagram.png" alt="icon">
+                                </a>
+                                <a href="https://www.pinterest.com/">
+                                    <img src="./icon/pinterest.png" alt="icon">
+                                </a>
+                                <a href="https://ge.linkedin.com/">
+                                    <img src="./icon/linkedin.png" alt="icon">
+                                </a>
+                                <a href="https://www.youtube.com/">
+                                    <img src="./icon/youtube.png" alt="icon">
+                                </a>
+                                <a href="https://dribbble.com/">
+                                    <img src="./icon/topcoat_dribble.png" alt="icon">
+                                </a>
+                                <a href="https://www.tiktok.com/">
+                                    <img src="./icon/tiktok.png" alt="icon">
+                                </a>
                             </div>
                         </div>
                         <div class="footer__socials-input">
@@ -988,7 +1136,7 @@
                                     <img src="./image/blogs1.png" alt="image">
                                 </div>
                                 <div class="blog__card-descriptions">
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    <a href="#"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></a>
                                     <h5>jan.9.22.15</h5>
                                 </div>
                             </div>
@@ -997,7 +1145,7 @@
                                     <img src="./image/blogs2.png" alt="image">
                                 </div>
                                 <div class="blog__card-descriptions">
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    <a href="#"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></a>
                                     <h5>jan.9.22.15</h5>
                                 </div>
                             </div>
@@ -1006,7 +1154,7 @@
                                     <img src="./image/blogs3.png" alt="image">
                                 </div>
                                 <div class="blog__card-descriptions">
-                                    <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
+                                    <a href="#"><h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4></a>
                                     <h5>jan.9.22.15</h5>
                                 </div>
                             </div>
@@ -1038,5 +1186,8 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="./JavaScript/burger.js"></script>
+    <script type="text/javascript" src="./JavaScript/slider.js"></script>
+    <script type="text/javascript" src="./JavaScript/accordion.js"></script>
 </body>
 </html>

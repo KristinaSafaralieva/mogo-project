@@ -35,3 +35,55 @@
         }
     }
 }
+
+@media screen and (max-width: 1024px) {
+    .device {
+        &__wrapper {
+            padding: 29px 0 39px;
+    
+            &__images {
+                margin: 0 auto;
+                max-width: 521px; 
+
+                &-mobile {
+                    max-width: 136px;
+                    bottom: -67px;
+                    right: -29px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 805px) {
+    .device {
+        &__images {
+            max-width: 380px;
+    
+            &-mobile {
+                max-width: 100px;
+                bottom: -54px;
+                right: -19px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .device {
+    
+        &__wrapper {
+            padding: 42px 0 25px;
+        }
+    
+        &__images {
+            max-width: 286px;
+
+            &-mobile {
+                max-width: 85px;
+                bottom: -54px;
+                right: 29px;
+            }
+        }
+    }
+}

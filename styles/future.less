@@ -4,11 +4,16 @@
     &__wrapper {
         width: 100%;
         display: flex;
+
+        @media screen and (max-width: 608px) {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
     }
 
     &__card {
-        border: 1px solid @white-color;
-        padding: 63px 40px;
+        border: 0.5px solid @white-color;
+        padding: 63px 39px;
 
         h3 {
             font-style: normal;
@@ -17,15 +22,81 @@
             line-height: 75px;
             text-align: center;
             color: @white-color-text;
+            margin-bottom: 15px;
+
+            @media screen and (max-width: 1024px) {
+                font-size: 48px;
+                line-height: 56px;
+            }
         }
 
         h4 {
             font-style: normal;
-            font-weight: 700;
+            font-weight: 500;
             font-size: 24px;
             line-height: 28px;
             text-align: center;
             color: @white-color-text;
+
+            @media screen and (max-width: 402px) {
+                font-size: 22px;
+            }
+        }
+
+        @media screen and (max-width: 1024px) {
+            padding: 29px 21px;
+        }
+
+        @media screen and (max-width: 608px) {
+            border: none;
+            border-bottom: 1px solid @white-color;
+        }
+
+        @media screen and (max-width: 402px) {
+            padding: 10px 7px 5px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .future {
+    
+        &__card {
+            padding: 29px 21px;
+    
+            h3 {
+                font-size: 48px;
+                line-height: 56px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 608px) {
+    .future {
+        background-color: @morning-backround-color;
+    
+        &__wrapper {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+    
+        &__card {
+            border: none;
+            border-bottom: 1px solid @white-color;
+        }
+    }
+}
+
+@media screen and (max-width: 402px) {
+    .future {
+    
+        &__card {
+            padding: 10px 7px 5px;
+    
+            h4 {
+                font-size: 22px;
+            }
         }
     }
 }

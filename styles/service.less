@@ -2,6 +2,10 @@
     &__wrapper {
         width: 100%;
         padding: 42px 0 25px;
+
+        @media screen and (max-width: 1024px) {
+            padding: 29px 0 0;
+        }
     }
 
     &__cards {
@@ -15,7 +19,7 @@
         max-height: 139px;
         width: 100%;
         display: flex;
-        margin: 80px auto 66px;
+        margin: 46px auto 66px;
 
         &-image {
             margin-right: 15px;
@@ -34,6 +38,11 @@
                 text-transform: uppercase;
                 padding: 11px 0;
                 color: @shark-color-text;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
             }
         }
 
@@ -47,8 +56,46 @@
                 align-items: center;
                 padding: 25px 0;
                 color: @shark-color-text;
+
+                @media screen and (max-width: 1024px) {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 18px 0;
+                }
             }
+        }
+
+        @media screen and (max-width: 1024px) {
+            margin: 32px auto 56px;
         }
     }
     
+}
+
+@media screen and (max-width: 1024px) {
+    .service {
+        &__wrapper {
+            padding: 29px 0 0;
+        }
+    
+        &__card {
+            margin: 32px auto 56px;
+    
+            &-title {
+                h3 {
+                    font-size: 18px;
+                    line-height: 21px;
+                }
+            }
+    
+            &-desc {
+                h5 {
+                    font-size: 14px;
+                    line-height: 16px;
+                    padding: 18px 0;
+                }
+            }
+        }
+        
+    } 
 }

@@ -35,22 +35,26 @@
             
             &__info {
                 &-name {
-                    font-style: normal;
-                    font-weight: 700;
-                    font-size: 24px;
-                    line-height: 28px;
-                    text-transform: uppercase;
-                    color: @shark-color-text;
-                    padding: 12px 0;
+                    h3 {
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 24px;
+                        line-height: 28px;
+                        text-transform: uppercase;
+                        color: @shark-color-text;
+                        padding: 12px 0;
+                    }
                 }
 
                 &-job {
-                    font-style: normal;
-                    font-weight: 400;
-                    font-size: 18px;
-                    line-height: 21px;
-                    text-transform: uppercase;
-                    color: @shark-color-text;
+                    h4 {
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 21px;
+                        text-transform: uppercase;
+                        color: @shark-color-text;
+                    }
                 }
 
                 &-divider {
@@ -62,12 +66,115 @@
             }
 
             &__review {
-                font-style: normal;
-                font-weight: 400;
-                font-size: 18px;
-                line-height: 21px;
-                color: @shark-color-text;
-                padding: 32px 0;
+                p {
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 18px;
+                    line-height: 21px;
+                    padding: 22px 0;
+                    color: @shark-color-text;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1120px) {
+    .clients {
+        &__wrapper {
+            padding: 29px 0;
+        }
+    
+        &__card {
+            margin-top: 28px;
+    
+            &-photo {
+                max-width: 88px;
+                width: 100%;
+                margin-right: 24px;
+            }
+    
+            &-user {
+                margin-left: 24px;
+                max-width: 317px;
+                
+                &__info {
+                    &-name {
+                        h3 {
+                            font-size: 18px;
+                            line-height: 21px;
+                            padding: 7px 0;
+                        }
+                    }
+    
+                    &-job {
+                        h4 {
+                            font-size: 14px;
+                            line-height: 16px;
+                        }
+                    }
+    
+                    &-divider {
+                        width: 48px;
+                        margin: 22px 0;
+                    }
+                }
+    
+                &__review {
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding: 19px 0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 925px) {
+    .clients {
+        &__cards {
+            justify-content: space-around;
+        }
+    
+        &__card {
+            flex-direction: column;
+            margin: 0 5px;
+
+            &-photo {
+                margin: 0 auto 21px;
+            }
+    
+            &-user {
+                margin-left: 0;
+                
+                &__info {
+                    &-name {
+                        h3 {
+                            text-align: center;
+                        }
+                    }
+    
+                    &-job {
+                        h4 {
+                            text-align: center;
+                        }
+                    }
+    
+                    &-divider {
+                        width: 134px;
+                        margin: 21px auto;
+
+                    }
+                }
+    
+                &__review {
+                    p {
+                        padding: 11px 0;
+                        text-align: center;
+                    }
+                }
             }
         }
     }

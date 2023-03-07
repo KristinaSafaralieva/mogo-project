@@ -4,8 +4,11 @@ body {
     .container {
         max-width: 1170px;
         margin: 0 auto;
+        padding: 0 10px;
 
         .text {
+            max-width: 1170px;
+            margin: 0 auto;
             margin-bottom: 42px;
             
             &-pretitle {
@@ -18,6 +21,12 @@ body {
                     text-align: center;
                     padding: 18px 0;
                     color: @shark-color-text;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 24px;
+                        line-height: 35px;
+                        padding: 16px;
+                    }
                 }
             }
     
@@ -32,6 +41,12 @@ body {
                     text-transform: uppercase;
                     margin-bottom: 24px;
                     color: @shark-color-text;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 24px;
+                        line-height: 28px;
+                        margin-bottom: 20px;
+                    }
                 }
             }
     
@@ -44,7 +59,25 @@ body {
                     text-align: center;
                     padding: 38px 0;
                     color: @black-color-text;
+
+                    @media screen and (max-width: 1024px) {
+                        font-size: 14px;
+                        line-height: 16px;
+                        padding: 24px;
+                    }
+
+                    @media screen and (max-width: 320px) {
+                        padding: 17px;
+                    }
                 }
+            }
+
+            @media screen and (max-width: 1024px) {
+                margin-bottom: 28px;
+            }
+
+            @media screen and (max-width: 400px) {
+                margin-bottom: 10px;
             }
         }
 
@@ -53,6 +86,10 @@ body {
             height: 4px;
             background-color: @froly-color;
             margin: 0 auto;
+
+            @media screen and (max-width: 1024px) {
+                width: 148px;
+            }
         }
     }
 }

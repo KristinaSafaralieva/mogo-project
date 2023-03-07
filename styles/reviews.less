@@ -76,6 +76,29 @@
         background-color: transparent;
         margin-bottom: 84px;
     }
+
+    &__dots {
+        display: none;
+        text-align: center;
+        margin-top: 25px;
+
+        &_button {
+            width: 10px;
+            height: 10px;
+            border-radius: 100%;
+            padding: 0;
+            background-color: transparent;
+            border: 2px solid @silver-color;
+
+            &-active {
+                background-color: @silver-color;
+            }
+
+            &:not(:last-child) {
+                margin-right: 20px;
+            }
+        }
+    }
 }
 
 .slider-button {
@@ -96,5 +119,118 @@
 
     &-right {
         transform: rotate(-90deg);
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .reviews {
+        &__wrapper {
+            padding: 28px 0;
+        }
+    
+        &__user {
+
+            &-image {
+                max-width: 115px;
+                max-height: 115px;
+                margin: auto 38px;
+            }
+    
+            &-text {
+                margin: 0;
+    
+                &__description {
+                    max-width: 655px;
+                    margin-bottom: 14px;
+    
+                    p {
+                        font-size: 18px;
+                        line-height: 21px;
+                    }
+                }
+    
+                &__info {
+    
+                    &-devider {
+                        width: 48px;
+                        height: 4px;
+                    }
+    
+                    &-name {
+                        font-size: 24px;
+                        line-height: 35px;
+                        margin-left: 28px;
+                    }
+                }
+            }
+        }
+    
+        &-second {
+            margin-bottom: 58px;
+        }
+    }
+    
+    .slider-button {
+        max-width: 29px;
+        max-height: 29px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .reviews {
+    
+        &__user {
+
+            &-image {
+                max-width: 90px;
+                max-height: 90px;
+                margin: auto 25px;
+            }
+    
+            &-text {
+    
+                &__description {
+    
+                    p {
+                        font-size: 14px;
+                        line-height: 16px;
+                    }
+                }
+    
+                &__info {
+    
+                    &-name {
+                        font-size: 18px;
+                        line-height: 26px;
+                        margin-left: 28px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 486px) {
+    .reviews {
+    
+        &__user {
+
+            &-image {
+                display: none;
+            }
+    
+            &-text {
+    
+                margin: 0 10px;
+            }
+        }
+
+        &__dots {
+            display: block;
+        }
+    }
+
+    .slider-button {
+        display: none;
     }
 }
