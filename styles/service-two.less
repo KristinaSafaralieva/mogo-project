@@ -32,6 +32,7 @@
                 flex-direction: column;
                 border: 1px solid @silver-color;
                 margin-bottom: @acordion_margin;
+                height: calc(@acordion_header_height + 2px);
 
                 &__header {
                     display: flex;
@@ -94,6 +95,7 @@
                 
                 &-open {
                     height: calc(100% - @acordion_header_height * 2 - @acordion_margin * 2 - 4px);
+                    transition: all 0.75s linear;
 
                     .accordion__body {
                         display: flex;
@@ -120,6 +122,7 @@
                     @acordion_tablet_margin: 18px;
 
                     margin-bottom: @acordion_tablet_margin;
+                    height: calc(@acordion_tablet_header_height + 2px);
     
                     &__header {
                         height: @acordion_tablet_header_height;
@@ -154,6 +157,7 @@
                     @acordion_tablet_margin: 10px;
 
                     margin-bottom: @acordion_tablet_margin;
+                    height: calc(@acordion_tablet_header_height + 2px);
     
                     &__header {
                         height: @acordion_tablet_header_height;
@@ -207,7 +211,10 @@
                     @acordion_tablet_margin: 10px;
 
                     margin-bottom: @acordion_tablet_margin;
-    
+                    height: calc(@acordion_tablet_header_height + 2px);
+                    max-height: calc(@acordion_tablet_header_height + 2px);
+                    overflow: hidden;
+
                     &__header {
                         height: @acordion_tablet_header_height;
 
@@ -223,7 +230,8 @@
                     }
                     
                     &-open {
-                        display: block;
+                        height: 100%;
+                        max-height: 300px;
                     }
                 }
             }

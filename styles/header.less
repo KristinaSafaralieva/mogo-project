@@ -28,10 +28,10 @@
     &__nav {
         .header__list {
             display: flex;
+            height: 100%;
+            align-items: center;
 
             li {
-                cursor: pointer;
-
                 a {
                     text-decoration: none;
                     font-style: normal;
@@ -41,7 +41,9 @@
                     display: flex;
                     text-transform: uppercase;
                     color: @white-color-text;
-                    padding: 42px 20px;
+                    margin: 0 20px;
+                    cursor: pointer;
+                    
 
                     &:hover {
                         color: @manhattan-color;
@@ -49,8 +51,44 @@
                     }
 
                     @media screen and (max-width: 860px) {    
-                        padding: 42px 10px;
+                        margin: 0 10px;
                     }
+                }
+
+                .search-box {
+                    height: 100%;
+                    transition: all 0.5s linear;
+                    display: flex;
+                    max-width: 64px;
+
+                    input {
+                        height:100%;
+                        width:100%;
+                        border:none;
+                        background: @white-color;
+                        font-size:18px;
+                        border-radius: 50px;
+                        padding: 10px 45px 10px 20px;
+                        outline:none;
+                        display: none;
+                    }
+
+                    &.active{
+                        width: 100%;
+                        max-width: 230px;
+
+                        input {
+                            display: block;
+                        }
+
+                        .masked-input {
+                            position: absolute;
+                            background-color: @froly-color;
+                            right: 0;
+                            top: 50%;
+                            transform: translateY(-50%);
+                        }
+                      }
                 }
 
                 .masked {
@@ -60,21 +98,17 @@
 
                     &-cart {
                         -webkit-mask-image: url(../icons/cart.svg);
-                        margin: 42px 20px;
+                        margin: 0 20px;
                     }
 
                     &-input {
                         -webkit-mask-image: url(../icons/input.svg);
-                        margin: 42px 20px;
+                        margin: 0 20px;
                     }
 
                     &:hover {
                         background-color: @manhattan-color;
                     }
-                }
-
-                input {
-                    display: none;
                 }
             }
 
