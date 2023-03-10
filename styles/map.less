@@ -1,21 +1,31 @@
 .map {
-    background-image: url(../images/map_big.png);
-    background-size: cover;
-    background-position: center;
-
-    &__blur {
-        background-color: @blur-background-color;
+    .container {
+        padding: 0;
     }
 
     &__wrapper {
         width: 100%;
-        padding: 42px 0;
+        margin: 42px 0;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            > .map__label {
+                transform: translate(-50%, 200%);
+            }
+
+            > .map__google {
+                opacity: 1;
+            }
+        }
     }
 
-    &__ico {
-        img {
-            margin: 0 auto;
-        }
+    &__label {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all 1s ease-in-out;
     }
 
     &__title {
@@ -32,20 +42,24 @@
             padding: 20px 0;
         }
     }
+
+    &__google {
+        width: 100%;
+        opacity: 0.2;
+        transition: all 1s ease-in-out;
+
+        iframe {
+            width: 100%;
+            height: 300px;
+        }
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .map {
     
         &__wrapper {
-            padding: 28px 0;
-        }
-    
-        &__ico {
-            img {
-                max-width: 28px;
-                max-height: 28px;
-            }
+            margin: 28px 0;
         }
     
         &__title {
@@ -56,6 +70,13 @@
                 font-size: 24px;
                 line-height: 28px;
                 padding: 14px 0;
+            }
+        }
+
+        &__google {
+    
+            iframe {
+                height: 231px;
             }
         }
     }

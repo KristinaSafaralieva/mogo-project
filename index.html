@@ -23,7 +23,12 @@
                         <li><a href="#blog">Blog</a></li>
                         <li><a href="#contact">Contact</a></li>
                         <li><div class="masked masked-cart"></div></li>
-                        <li><div class="masked masked-input"></div><input type="search"></li>
+                        <li>
+                            <div class="search-box">
+                                <input type="text" placeholder="Search">
+                                <div class="masked masked-input"></div>
+                            </div>
+                        </li>
                     </ul>
                 </div>
                 <div class="burger_button">
@@ -1062,12 +1067,12 @@
         </div>
     </section>
     <section class="map">
-        <div class="map__blur">
-            <div class="container">
-                <div class="map__wrapper">
-                    <div class="map__ico">
-                        <img src="./icons/location.png" alt="location">
-                    </div>
+        <div class="container">
+            <div class="map__wrapper">
+                <div class="map__google">
+                   <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=231&amp;hl=en&amp;q=41.6168,41.6367+(My%20Business%20Name)&amp;t=k&amp;z=12&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+                </div>
+                <div class="map__label">
                     <div class="map__title">
                         <h2>Latest blog</h2>
                     </div>
@@ -1186,6 +1191,7 @@
             </div>
         </div>
     </footer>
+    <script type="text/javascript" src="./JavaScript/search.js"></script>
     <script type="text/javascript" src="./JavaScript/burger.js"></script>
     <script type="text/javascript" src="./JavaScript/slider.js"></script>
     <script type="text/javascript" src="./JavaScript/accordion.js"></script>
